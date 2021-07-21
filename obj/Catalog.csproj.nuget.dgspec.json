@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/mpatino/Desktop/Catalog/Catalog.csproj": {}
+    "/Users/martin/personal-workspace/catalog-dotnet-api/Catalog.csproj": {}
   },
   "projects": {
-    "/Users/mpatino/Desktop/Catalog/Catalog.csproj": {
+    "/Users/martin/personal-workspace/catalog-dotnet-api/Catalog.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/mpatino/Desktop/Catalog/Catalog.csproj",
+        "projectUniqueName": "/Users/martin/personal-workspace/catalog-dotnet-api/Catalog.csproj",
         "projectName": "Catalog",
-        "projectPath": "/Users/mpatino/Desktop/Catalog/Catalog.csproj",
-        "packagesPath": "/Users/mpatino/.nuget/packages/",
-        "outputPath": "/Users/mpatino/Desktop/Catalog/obj/",
+        "projectPath": "/Users/martin/personal-workspace/catalog-dotnet-api/Catalog.csproj",
+        "packagesPath": "/Users/martin/.nuget/packages/",
+        "outputPath": "/Users/martin/personal-workspace/catalog-dotnet-api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/mpatino/.nuget/NuGet/NuGet.Config"
+          "/Users/martin/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -65,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.202/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.100/RuntimeIdentifierGraph.json"
         }
       }
     }

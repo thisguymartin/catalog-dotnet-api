@@ -41,15 +41,15 @@ namespace Catalog.Repositories
       return itemsCollection;
     }
 
-    public void UpdateItem(Item item)
-    {
-
-      var filter = filterBuilder.eq()
-    }
 
     IEnumerable<Item> IItemRepository.GetItems()
     {
       return itemsCollection.Find(new BsonDocument()).ToList();
+    }
+
+    public void UpdateItem(Item item)
+    {
+      throw new NotImplementedException();
     }
   }
 
