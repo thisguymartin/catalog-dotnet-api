@@ -13,6 +13,7 @@ namespace Catalog.Repositories
     private readonly IMongoCollection<Item> itemsCollection;
     private const string databaseName = "catalog";
     private const string collectionName = "items";
+    private readonly FilterDefinitionBuilder<Item> filterBuilder = Builders<Item>.Filter;
 
     public MongoDbItemsRepository(IMongoClient mongoClient)
     {
@@ -26,9 +27,8 @@ namespace Catalog.Repositories
 
     public void DeleteItem(Guid id)
     {
-
-      itemsCollection.FindOneAndDelete(item => item.Id == id);
-
+      var filter = filterBuilder.Eq(existingItem => existingItem.Id, id);
+      itemsCollection.DeleteOne(filter);
     }
 
     public Item GetItem(Guid id)
@@ -49,7 +49,8 @@ namespace Catalog.Repositories
 
     public void UpdateItem(Item item)
     {
-      throw new NotImplementedException();
+      var filter = filterBuilder.Eq(existingItem => existingItem.Id, item.Id);
+      itemsCollection.ReplaceOneAsync(filter, item);
     }
   }
 
